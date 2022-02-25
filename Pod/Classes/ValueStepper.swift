@@ -406,12 +406,11 @@ private enum Button: Int {
     // Update all the subviews tintColor properties.
     open override func tintColorDidChange() {
         layer.borderColor = tintColor.cgColor
-        iconButtonColor = tintColor
         valueLabel.textColor = labelTextColor
         leftSeparator.strokeColor = tintColor.cgColor
         rightSeparator.strokeColor = tintColor.cgColor
-        increaseLayer.strokeColor = tintColor.cgColor
-        decreaseLayer.strokeColor = tintColor.cgColor
+        increaseLayer.strokeColor = iconButtonColor.cgColor
+        decreaseLayer.strokeColor = iconButtonColor.cgColor
     }
 
     // MARK: Helpers
