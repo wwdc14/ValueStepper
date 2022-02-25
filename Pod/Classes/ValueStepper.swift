@@ -391,10 +391,10 @@ private enum Button: Int {
         } else {
             increaseButton.isEnabled = true
             increaseButton.backgroundColor = backgroundButtonColor
-            increaseLayer.strokeColor = tintColor.cgColor
+            increaseLayer.strokeColor = iconButtonColor.cgColor
             decreaseButton.isEnabled = true
             decreaseButton.backgroundColor = backgroundButtonColor
-            decreaseLayer.strokeColor = tintColor.cgColor
+            decreaseLayer.strokeColor = iconButtonColor.cgColor
         }
     }
 
